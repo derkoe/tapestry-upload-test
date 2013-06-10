@@ -22,8 +22,8 @@ public class UploadTest
     private LinkSource linkSource;
 
     @OnEvent("UploadException")
-    Object onUploadException(FileUploadException ex)
+    UploadTest onUploadException(FileUploadException ex)
     {
-        return linkSource.createPageRenderLink("UploadTest", true, contextValue);
+        return this;
     }
 }
