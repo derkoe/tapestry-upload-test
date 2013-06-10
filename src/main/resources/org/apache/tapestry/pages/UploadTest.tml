@@ -1,0 +1,20 @@
+<html t:type="layout" title="prop:contextValue" t:sidebarTitle="Framework Version"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd" xmlns:p="tapestry:parameter">
+
+	<form t:type="form">
+		<label>
+			Upload File
+			<input type="file" t:type="upload" value="uploadedFile"></input>
+		</label>
+		<input type="submit" t:type="submit" value="Submit" />
+	</form>
+
+	<p:sidebar>
+		<p>
+			[
+			<t:pagelink page="Index">Home</t:pagelink>
+			]
+		</p>
+	</p:sidebar>
+
+</html>
